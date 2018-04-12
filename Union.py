@@ -5,7 +5,11 @@
 # lists. You may assume the first list
 # is a set, that is, it contains no 
 # repeated elements.
-
+def union(a,b):
+	for i in b:
+		if i not in a:
+			print a.append(i)
+		
 
 
 
@@ -14,10 +18,10 @@
 # To test, uncomment all lines 
 # below except those beginning with >>>.
 
-#a = [1,2,3]
-#b = [2,4,6]
-#union(a,b)
-#print a 
+a = [1,2,3]
+b = [2,4,6]
+union(a,b)
+print a 
 #>>> [1,2,3,4,6]
-#print b
+print b
 #>>> [2,4,6]
